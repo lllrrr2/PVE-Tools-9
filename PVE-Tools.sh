@@ -12,7 +12,7 @@
 
 
 # 版本信息
-CURRENT_VERSION="7.6.0"
+CURRENT_VERSION="7.7.0"
 BUILD_NICKNAME="Funa"
 VERSION_FILE_URL="https://raw.githubusercontent.com/Mapleawaa/PVE-Tools-9/main/VERSION"
 UPDATE_FILE_URL="https://raw.githubusercontent.com/Mapleawaa/PVE-Tools-9/main/UPDATE"
@@ -2248,7 +2248,7 @@ change_sources() {
             debian_mirror="$MIRROR_ALIYUN"
             debian_security_mirror="$DEBIAN_SECURITY_MIRROR_ALIYUN"
             pve_mirror="$PVE_MIRROR_OFFICIAL"
-            ceph_mirror="$CEPH_MIRROR_ALIYUN"
+            ceph_mirror="$CEPH_MIRROR_OFFICIAL"
             ct_mirror="$CT_MIRROR_OFFICIAL"
             ;;
         $MIRROR_DEBIAN)
@@ -2265,7 +2265,7 @@ change_sources() {
             log_info "腾讯云公网源当前仅用于 Debian / 安全更新，PVE / CT / Ceph 继续沿用官方回退源"
             ;;
         $MIRROR_ALIYUN)
-            log_info "阿里云公网源已用于 Debian / 安全 / Ceph，PVE / CT 继续沿用官方回退源"
+            log_info "阿里云公网源已用于 Debian / 安全更新，PVE / Ceph / CT 继续沿用官方源（阿里云暂无对应镜像）"
             ;;
     esac
 

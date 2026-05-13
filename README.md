@@ -16,8 +16,8 @@
 </div>
 
 >[!warning]
-> CVE-2026-31431 处置功能已经加入正式发布版本，推荐大家升级并处置漏洞
-> 漏洞来源：[CVE-2026-31431](https://nvd.nist.gov/vuln/detail/CVE-2026-31431)
+> 本项目正在使用 [Go](https://go.dev/) 重写项目，详见 [beta-go](https://github.com/Mapleawaa/PVE-Tools-9/tree/beta-go)
+> [主分支](https://github.com/Mapleawaa/PVE-Tools-9/tree/main)的 Shell 脚本可能会暂缓更新
 
 ## 快速开始
 

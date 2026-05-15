@@ -2,7 +2,7 @@
 import { ref, onMounted } from 'vue'
 
 const dismissed = ref(true) // 默认隐藏，防止闪烁
-const STORAGE_KEY = 'pve-tools-plugin-submit-banner-dismissed'
+const STORAGE_KEY = 'pve-tools-announcement-v1-dismissed'
 
 onMounted(() => {
   const isDismissed = localStorage.getItem(STORAGE_KEY)
@@ -24,8 +24,8 @@ const dismiss = () => {
     <div v-if="!dismissed" class="announcement-banner">
       <div class="toast-header">
         <div class="title-group">
-          <span class="icon">🧩</span>
-          <span class="title">插件提交通道已开启！可以提交自己写的插件啦！</span>
+          <span class="icon">⚠️</span>
+          <span class="title">公告：吃白食还嫌饭馊</span>
         </div>
         <button class="close-btn" @click="dismiss" title="关闭">
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
@@ -33,9 +33,11 @@ const dismiss = () => {
       </div>
       <div class="toast-body">
         <p class="message">
-          懂 Git 的用户可直接提 PR，不熟悉 Git 的用户可用 Issue 模板提交插件需求或脚本内容。
+          本项目免费开源，维护全凭热情。提交 Issue 前请先读文档和告示，无效反馈将被直接关闭。尊重是相互的。
         </p>
-        <a class="banner-link" href="/submit-plugin">点这里查看提交流程细节 →</a>
+        <p class="message">
+          Shell 版 v8.8.8 为最终版本，<code>main</code> 分支将停止更新。后续请关注 Go 重构版（<a class="banner-link" href="https://github.com/Mapleawaa/PVE-Tools-9/tree/beta-go" target="_blank">beta-go</a>），将继续免费开源。
+        </p>
       </div>
     </div>
   </Transition>

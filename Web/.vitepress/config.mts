@@ -69,8 +69,8 @@ export default defineConfig({
     ['meta', { property: 'og:locale', content: 'zh_CN' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:site', content: '@Mapleawaa' }],
-    ['link', { rel: 'stylesheet', href: 'https://s1.hdslb.com/bfs/static/jinkela/longtu/images/harmonyos_sans_sc.css' }],
-    ['link', { rel: 'stylesheet', href: 'https://s1.hdslb.com/bfs/static/jinkela/longtu/images/harmonyos_sans_sc_mono.css' }]
+    // ['link', { rel: 'stylesheet', href: 'https://s1.hdslb.com/bfs/static/jinkela/longtu/images/harmonyos_sans_sc.css' }],
+    // ['link', { rel: 'stylesheet', href: 'https://s1.hdslb.com/bfs/static/jinkela/longtu/images/harmonyos_sans_sc_mono.css' }]
   ],
   transformHead({ page, title, description }) {
     const url = pageToUrl(page)
@@ -129,7 +129,8 @@ export default defineConfig({
         text: '项目动态',
         items: [
           { text: '更新日志', link: '/update' },
-          { text: '开发计划', link: '/todo' }
+          { text: '开发计划', link: '/todo' },
+          { text: '归档说明', link: '/eol' }
         ]
       },
       {
@@ -163,7 +164,8 @@ export default defineConfig({
           { text: '提交插件', link: '/submit-plugin' },
           { text: '更新日志', link: '/update' },
           { text: '开发计划', link: '/todo' },
-          { text: '常见问题', link: '/faq' }
+          { text: '常见问题', link: '/faq' },
+          { text: '归档说明', link: '/eol' }
         ]
       },
       {
@@ -200,8 +202,8 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/Mapleawaa/PVE-Tools-9' }
     ],
     footer: {
-      message: '基于 Cloudflare Pages 托管 | 使用 Umami 收集匿名信息 ',
-      copyright: ' | Copyright © 2024 - ∞ Maple'
+      message: ' Ciriu Networks |',
+      copyright: '   | Copyright © 2024 - ∞ Maple'
     },
     // 自定义脚本源配置
     scriptSources: {

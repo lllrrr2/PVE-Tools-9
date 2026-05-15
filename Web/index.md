@@ -15,12 +15,12 @@ hero:
     - theme: brand
       text: 立即开始
       link: /guide
-    - theme: alt
-      text: 查看功能
-      link: /features
     - theme: brand
       text: 更新日志
       link: /update
+    - theme: brand
+      text: 阅读归档说明
+      link: /eol
     - theme: alt
       text: 在 GitHub 查看
       link: https://github.com/Mapleawaa/PVE-Tools-9

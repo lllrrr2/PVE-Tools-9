@@ -12,8 +12,8 @@
 
 
 # 版本信息
-CURRENT_VERSION="7.7.0"
-BUILD_NICKNAME="Funa"
+CURRENT_VERSION="8.8.8"
+BUILD_NICKNAME="Coluccis"
 VERSION_FILE_URL="https://raw.githubusercontent.com/Mapleawaa/PVE-Tools-9/main/VERSION"
 UPDATE_FILE_URL="https://raw.githubusercontent.com/Mapleawaa/PVE-Tools-9/main/UPDATE"
 PVE_VERSION_DETECTED=""
@@ -2227,12 +2227,14 @@ change_sources() {
     case $SELECTED_MIRROR in
         $MIRROR_USTC)
             debian_mirror="https://mirrors.ustc.edu.cn/debian"
+            debian_security_mirror="https://mirrors.ustc.edu.cn/debian-security"
             pve_mirror="$MIRROR_USTC"
             ceph_mirror="$CEPH_MIRROR_USTC"
             ct_mirror="$CT_MIRROR_USTC"
             ;;
         $MIRROR_TUNA)
             debian_mirror="https://mirrors.tuna.tsinghua.edu.cn/debian"
+            debian_security_mirror="https://mirrors.tuna.tsinghua.edu.cn/debian-security"
             pve_mirror="$MIRROR_TUNA"
             ceph_mirror="$CEPH_MIRROR_TUNA"
             ct_mirror="$CT_MIRROR_TUNA"
@@ -2262,7 +2264,7 @@ change_sources() {
 
     case $SELECTED_MIRROR in
         $MIRROR_TENCENT)
-            log_info "腾讯云公网源当前仅用于 Debian / 安全更新，PVE / CT / Ceph 继续沿用官方回退源"
+            log_info "腾讯云公网源当前仅用于 Debian / 安全更新，PVE / CT / Ceph 继续沿用官方源（腾讯云暂无对应镜像）"
             ;;
         $MIRROR_ALIYUN)
             log_info "阿里云公网源已用于 Debian / 安全更新，PVE / Ceph / CT 继续沿用官方源（阿里云暂无对应镜像）"
@@ -6227,6 +6229,7 @@ show_menu() {
     show_menu_option "7" "存储与磁盘维护 ${CYAN}( Local合并 / Ceph / 休眠 / Swap )${NC}"
     show_menu_option "8" "诊断工具与项目信息 ${CYAN}( 系统信息 / 救砖 / 项目链接 )${NC}"
     show_menu_option "9" "Copy Fail 修复复查与清理 ${CYAN}( ${COPY_FAIL_CVE_ID} / 检测 / 清理 / 回滚 / 升级 )${NC}"
+    show_menu_option "10" "尝鲜 Go 版本 ${CYAN}( 体验Go版本的脚本哦！ )${NC}"
     echo "$UI_DIVIDER"
     show_menu_option "0" "${RED}退出脚本${NC}"
     show_menu_footer
@@ -6274,12 +6277,13 @@ show_menu_rescue() {
 menu_optimization() {
     while true; do
         clear
+        echo "功能 1/2 请在外部SSH环境下使用该功能！否则会导致PVE WebUi重启导致Shell断开连接修改失效！"
+        echo "不要犟！查看如何连接到PVE SSH教程：https://pve.oowo.cc/advanced/how-to-connect-ssh.html"
         show_menu_header "系统优化"
         show_menu_option "1" "删除订阅弹窗"
-        show_menu_option "2" "温度监控管理 ${CYAN}(CPU/硬盘监控设置)${NC}"
-        show_menu_option "3" "CPU 电源模式配置"
-        show_menu_option "4" "${MAGENTA}一键优化 (换源+删弹窗+更新)${NC} / 请在外部SSH环境下使用该功能！否则会导致PVE WebUi重启导致Shell断开连接修改失效！"
-        echo "不要犟！查看如何连接到PVE SSH教程：https://pve.oowo.cc/advanced/how-to-connect-ssh.html"
+        show_menu_option "2" "${MAGENTA}一键优化 (换源+删弹窗+更新)${NC}"
+        show_menu_option "3" "温度监控管理 ${CYAN}(CPU/硬盘监控设置)${NC}"
+        show_menu_option "4" "CPU 电源模式配置"
         show_menu_option "5" "配置邮件通知 ${CYAN}(SMTP/Postfix)${NC}"
         echo "$UI_DIVIDER"
         show_menu_option "0" "返回主菜单"
@@ -6287,9 +6291,9 @@ menu_optimization() {
         read -p "请选择操作 [0-6]: " choice
         case $choice in
             1) remove_subscription_popup ;;
-            2) temp_monitoring_menu ;;
-            3) cpupower ;;
-            4) quick_setup ;;
+            2) quick_setup ;;
+            3) temp_monitoring_menu ;;
+            4) cpupower ;;
             5) pve_mail_notification_setup ;;
             0) return ;;
             *) log_error "无效选择" ;;
@@ -13057,6 +13061,15 @@ amd_igpu_management_menu() {
         pause_function
     done
 }
+
+go_version() {
+    echo -e "${CYAN}当前 Go 版本暂未开发完成，敬请期待后续更新。${NC}"
+    echo -e "按任意键回到主菜单..."
+    read -n 1 -s
+    return 
+
+}
+
 # 主程序
 main() {
     check_root
@@ -13111,6 +13124,9 @@ main() {
                 ;;
             9)
                 copy_fail_management_menu
+                ;;
+            10)
+                go_version
                 ;;
             0)
                 echo "感谢使用,谢谢喵"

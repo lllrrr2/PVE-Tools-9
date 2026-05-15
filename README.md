@@ -17,6 +17,7 @@
 
 > [!CAUTION]
 > **Shell版本停更公告**
+> 
 > 感谢大家一直以来对 PVE-Tools-9 的支持。随着项目功能的不断增加，目前的 Shell 脚本代码量已突破 13000 行。
 > 
 > 受限于 Shell 语言本身的特性，继续在此基础上增加新功能或进行大规模修改，已经变得难以维护且容易引发不可预知的 Bug。
@@ -27,8 +28,6 @@
 > 
 > 我目前已经开启了底层基于 Go 语言 的全新版本重构计划，后续维护将迁移至 Go 重构版本（[beta-go](https://github.com/Mapleawaa/PVE-Tools-9/tree/beta-go) 分支），Go 版本将继续免费开源,新版本将带来更好的稳定性、更友好的交互以及更严谨的环境校验，敬请期待。
 
-> [!warning]
-> 本项目正在使用 [Go](https://go.dev/) 重构，详见 [beta-go](https://github.com/Mapleawaa/PVE-Tools-9/tree/beta-go)。
 
 ## 快速开始
 

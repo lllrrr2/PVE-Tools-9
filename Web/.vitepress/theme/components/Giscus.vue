@@ -21,7 +21,7 @@ watch(isDark, (newVal) => {
     <component
       :is="'script'"
       src="https://giscus.app/client.js"
-      data-repo="Mapleawaa/PVE-Tools-9"
+      data-repo="PVE-Tools/PVE-Tools-9"
       data-repo-id="R_kgDOM74h_A" 
       data-category="Announcements"
       data-category-id="DIC_kwDOM74h_M4CjSjG"

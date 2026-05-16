@@ -14,7 +14,7 @@ An all-in-one operations script for Proxmox VE 9.x, covering VM lifecycle workfl
 > This project is free and open source, maintained solely by personal passion. Before opening an issue or asking a question, please make sure you have read the documentation, on-screen notices, and existing issues thoroughly.
 > Feedback without reproduction steps, logs, or other useful information will be closed directly. Open source does not make anyone your servant. Respect is a two-way street.
 >
-> **The `main` branch (Shell version) will stop receiving updates after v8.8.8. Future development will move to the Go rewrite ([beta-go](https://github.com/Mapleawaa/PVE-Tools-9/tree/beta-go) branch), which will remain free and open source.**
+> **The `main` branch (Shell version) will stop receiving updates after v8.8.8. Future development will move to the Go rewrite ([beta-go](https://github.com/PVE-Tools/PVE-Tools-9/tree/beta-go) branch), which will remain free and open source.**
 
 ## Overview
 

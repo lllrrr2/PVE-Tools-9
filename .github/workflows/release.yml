@@ -70,7 +70,7 @@ jobs:
             
             **方式一：直接运行脚本 (推荐)**
             ```bash
-            bash -c "$(curl -fsSL https://raw.githubusercontent.com/Mapleawaa/PVE-Tools-9/main/PVE-Tools.sh)"
+            bash -c "$(curl -fsSL https://raw.githubusercontent.com/PVE-Tools/PVE-Tools-9/main/PVE-Tools.sh)"
             ```
             
             **方式二：下载二进制文件**

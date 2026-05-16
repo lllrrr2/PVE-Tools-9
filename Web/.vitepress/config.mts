@@ -147,7 +147,7 @@ export default defineConfig({
           { text: '最终用户许可（ULA）', link: '/ula' }
         ]
       },
-      { text: 'GitHub', link: 'https://github.com/Mapleawaa/PVE-Tools-9' }
+      { text: 'GitHub', link: 'https://github.com/PVE-Tools/PVE-Tools-9' }
     ],
     search: {
       provider: 'local'
@@ -199,7 +199,7 @@ export default defineConfig({
       }
     ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/Mapleawaa/PVE-Tools-9' }
+      { icon: 'github', link: 'https://github.com/PVE-Tools/PVE-Tools-9' }
     ],
     footer: {
       message: ' Ciriu Networks |',
@@ -208,8 +208,8 @@ export default defineConfig({
     // 自定义脚本源配置
     scriptSources: {
       cloudflare: 'https://pve.oowo.cc/PVE-Tools.sh',
-      ghfast: 'https://ghfast.top/raw.githubusercontent.com/Mapleawaa/PVE-Tools-9/main/PVE-Tools.sh',
-      github: 'https://raw.githubusercontent.com/Mapleawaa/PVE-Tools-9/main/PVE-Tools.sh',
+      ghfast: 'https://ghfast.top/raw.githubusercontent.com/PVE-Tools/PVE-Tools-9/main/PVE-Tools.sh',
+      github: 'https://raw.githubusercontent.com/PVE-Tools/PVE-Tools-9/main/PVE-Tools.sh',
       edgeone: '未上线'
     }
   }

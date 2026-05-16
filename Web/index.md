@@ -23,7 +23,7 @@ hero:
       link: /eol
     - theme: alt
       text: 在 GitHub 查看
-      link: https://github.com/Mapleawaa/PVE-Tools-9
+      link: https://github.com/PVE-Tools/PVE-Tools-9
 
 my_features:
   - title: VM 生命周期运维

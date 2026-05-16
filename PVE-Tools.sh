@@ -14,8 +14,8 @@
 # 版本信息
 CURRENT_VERSION="8.8.8"
 BUILD_NICKNAME="Coluccis"
-VERSION_FILE_URL="https://raw.githubusercontent.com/Mapleawaa/PVE-Tools-9/main/VERSION"
-UPDATE_FILE_URL="https://raw.githubusercontent.com/Mapleawaa/PVE-Tools-9/main/UPDATE"
+VERSION_FILE_URL="https://raw.githubusercontent.com/PVE-Tools/PVE-Tools-9/main/VERSION"
+UPDATE_FILE_URL="https://raw.githubusercontent.com/PVE-Tools/PVE-Tools-9/main/UPDATE"
 PVE_VERSION_DETECTED=""
 PVE_MAJOR_VERSION=""
 RISK_ACK_BYPASS=false
@@ -95,10 +95,10 @@ PVE_KVM_ROM_DIR="/usr/share/kvm"
 # 快速虚拟机下载脚本配置
 FASTPVE_INSTALLER_URL="https://raw.githubusercontent.com/kspeeder/fastpve/main/fastpve-install.sh"
 FASTPVE_PROJECT_URL="https://github.com/kspeeder/fastpve"
-THIRD_PARTY_MODULES_TREE_API_MAIN_URL="https://api.github.com/repos/Mapleawaa/PVE-Tools-9/git/trees/main?recursive=1"
-THIRD_PARTY_MODULES_TREE_API_MASTER_URL="https://api.github.com/repos/Mapleawaa/PVE-Tools-9/git/trees/master?recursive=1"
-THIRD_PARTY_MODULES_RAW_BASE_URL="https://raw.githubusercontent.com/Mapleawaa/PVE-Tools-9/main/Modules"
-NVIDIA_ASSETS_BASE_URL="https://raw.githubusercontent.com/Mapleawaa/PVE-Tools-9/main/Modules/NVIDIA"
+THIRD_PARTY_MODULES_TREE_API_MAIN_URL="https://api.github.com/repos/PVE-Tools/PVE-Tools-9/git/trees/main?recursive=1"
+THIRD_PARTY_MODULES_TREE_API_MASTER_URL="https://api.github.com/repos/PVE-Tools/PVE-Tools-9/git/trees/master?recursive=1"
+THIRD_PARTY_MODULES_RAW_BASE_URL="https://raw.githubusercontent.com/PVE-Tools/PVE-Tools-9/main/Modules"
+NVIDIA_ASSETS_BASE_URL="https://raw.githubusercontent.com/PVE-Tools/PVE-Tools-9/main/Modules/NVIDIA"
 NVIDIA_VGPU_UNLOCK_SO_URL="${NVIDIA_ASSETS_BASE_URL}/libvgpu_unlock_rs.so"
 VM_CONFIG_EXPORT_DIR="/var/lib/pve-tools/vm-config-exports"
 VM_BACKUP_CRON_FILE="/etc/cron.d/pve-tools-vm-backup"
@@ -11135,7 +11135,7 @@ menu_tools_about() {
             1) show_system_info ;;
             2) show_menu_rescue ;;
             3) 
-                echo -e "${YELLOW}项目地址：https://github.com/Mapleawaa/PVE-Tools-9${NC}"
+                echo -e "${YELLOW}项目地址：https://github.com/PVE-Tools/PVE-Tools-9${NC}"
                 echo -e "${GREEN}您的支持是我更新的最大动力，谢谢喵~${NC}"
                 ;;
             0) return ;;
@@ -11306,7 +11306,7 @@ check_update() {
     if [ -z "$remote_content" ]; then
         log_warn "网络连接失败，跳过版本检查"
         echo "提示：您可以手动访问以下地址检查更新："
-        echo "https://github.com/Mapleawaa/PVE-Tools-9"
+        echo "https://github.com/PVE-Tools/PVE-Tools-9"
         echo "按回车键继续..."
         read -r
         return
@@ -11364,7 +11364,7 @@ check_update() {
         echo -e "----------------------------------------------"
         echo -e "${CYAN}官方文档与最新脚本：${NC}"
         echo -e "🔗 https://pve.oowo.cc (推荐)"
-        echo -e "🔗 https://github.com/Mapleawaa/PVE-Tools-9"
+        echo -e "🔗 https://github.com/PVE-Tools/PVE-Tools-9"
         echo -e "${UI_FOOTER}"
         echo -e "按 ${GREEN}回车键${NC} 进入主菜单..."
         read -r

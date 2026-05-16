@@ -36,11 +36,11 @@
 </div>
 
 ```
-bash <(curl -sSL https://ghfast.top/github.com/Mapleawaa/PVE-Tools-9/blob/main/PVE-Tools.sh)
+bash <(curl -sSL https://ghfast.top/github.com/PVE-Tools/PVE-Tools-9/blob/main/PVE-Tools.sh)
 ```
 #### 国际网络
 ```
-bash <(curl -sSL https://github.com/Mapleawaa/PVE-Tools-9/blob/main/PVE-Tools.sh)
+bash <(curl -sSL https://github.com/PVE-Tools/PVE-Tools-9/blob/main/PVE-Tools.sh)
 ```
 
 ---
@@ -54,7 +54,7 @@ PVE Tools Pro is a one-click configuration tool specifically designed for **Prox
 **If you encounter any issues while using the script, please open an issue directly. I will check and fix them during my free time.**
 **Suggestions and PRs are welcome!**
 
-[![Commits](https://img.shields.io/badge/Commits-ViewCommitHistory-blue?style=flat-square&logo=github)](https://github.com/Mapleawaa/PVE-Tools-9/commits/)
+[![Commits](https://img.shields.io/badge/Commits-ViewCommitHistory-blue?style=flat-square&logo=github)](https://github.com/PVE-Tools/PVE-Tools-9/commits/)
 </div>
 
 ### ✨ Key Features
@@ -102,7 +102,7 @@ PVE Tools Pro is a one-click configuration tool specifically designed for **Prox
 
 ```bash
 # 1. Download the script
-wget https://raw.githubusercontent.com/Mapleawaa/PVE-Tools-9/main/PVE-Tools.sh
+wget https://raw.githubusercontent.com/PVE-Tools/PVE-Tools-9/main/PVE-Tools.sh
 
 # 2. Add execution permission
 chmod +x PVE-Tools.sh

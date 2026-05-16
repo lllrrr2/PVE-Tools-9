@@ -4,7 +4,7 @@ v8.8.8
 - 系统优化菜单调整：将"一键优化"提前至第二项，并在菜单顶部添加 SSH 环境使用提示
 - 腾讯云源提示文案优化，明确说明 PVE / CT / Ceph 沿用官方源的原因
 - 版本号同步提升到 8.8.8，代号更新为 Coluccis
-- Shell将无限期停止维护，正式版将使用Go重构。查看详细：https://github.com/Mapleawaa/PVE-Tools-9/tree/beta-go
+- Shell将无限期停止维护，正式版将使用Go重构。查看详细：https://github.com/PVE-Tools/PVE-Tools-9/tree/beta-go
 
 v7.7.0
 - 修复阿里云换源时 Ceph 镜像指向不存在地址（404）的 BUG，改为使用官方 Ceph 源

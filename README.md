@@ -25,9 +25,10 @@
 > 因此，我决定停止当前 Shell 版本的新功能开发，仅做极其重大的致命 Bug 修复。该仓库将保持原样，不会删库，大家依然可以正常使用现有功能。
 > 
 > `main` 分支（Shell 版本）发布 v8.8.8 后将停止更新，后续正式版本推出后将切到主main分支。
-> 
-> 我目前已经开启了底层基于 Go 语言 的全新版本重构计划，后续维护将迁移至 Go 重构版本（[beta-go](https://github.com/Mapleawaa/PVE-Tools-9/tree/beta-go) 分支），Go 版本将继续免费开源,新版本将带来更好的稳定性、更友好的交互以及更严谨的环境校验，敬请期待。
+> 我目前已经开启了底层基于 Go 语言 的全新版本重构计划，后续维护将迁移至 Go 重构版本（[beta-go](https://github.com/PVE-Tools/PVE-Tools-9/tree/beta-go) 分支），Go 版本将继续免费开源,新版本将带来更好的稳定性、更友好的交互以及更严谨的环境校验，敬请期待。
 
+> [!warning]
+> 本项目正在使用 [Go](https://go.dev/) 重构，详见 [beta-go](https://github.com/PVE-Tools/PVE-Tools-9/tree/beta-go)。
 
 ## 快速开始
 
@@ -48,17 +49,17 @@ bash <(curl -sSL https://pve.oowo.cc/PVE-Tools.sh)
 
 ### 中国大陆网络
 ```bash
-bash <(curl -sSL https://ghfast.top/raw.githubusercontent.com/Mapleawaa/PVE-Tools-9/main/PVE-Tools.sh)
+bash <(curl -sSL https://ghfast.top/raw.githubusercontent.com/PVE-Tools/PVE-Tools-9/main/PVE-Tools.sh)
 ```
 
 ### 国际网络
 ```bash
-bash <(curl -sSL https://raw.githubusercontent.com/Mapleawaa/PVE-Tools-9/main/PVE-Tools.sh)
+bash <(curl -sSL https://raw.githubusercontent.com/PVE-Tools/PVE-Tools-9/main/PVE-Tools.sh)
 ```
 
 ### 本地下载运行
 ```bash
-wget https://raw.githubusercontent.com/Mapleawaa/PVE-Tools-9/main/PVE-Tools.sh
+wget https://raw.githubusercontent.com/PVE-Tools/PVE-Tools-9/main/PVE-Tools.sh
 chmod +x PVE-Tools.sh
 sudo ./PVE-Tools.sh
 ```
@@ -119,7 +120,7 @@ PVE Tools Pro 是一个面向 Proxmox VE 9.x 的交互式 Bash 工具。
 ## Community
 
 - 官网：https://pve.oowo.cc
-- GitHub Issues：https://github.com/Mapleawaa/PVE-Tools-9/issues
+- GitHub Issues：https://github.com/PVE-Tools/PVE-Tools-9/issues
 - QQ 群：1031976463
 - Sponsor：https://pve.oowo.cc/sponsor
 

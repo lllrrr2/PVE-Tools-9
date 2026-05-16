@@ -105,7 +105,7 @@ bun run preview   # 预览构建结果
 |---|---|---|
 | Cloudflare Pages | 网站托管与 CDN | `wrangler.jsonc` |
 | Umami | 匿名访问分析 | `config.mts`（head 中的 script） |
-| Giscus | 文档评论系统 | `Giscus.vue`（repo: Mapleawaa/PVE-Tools-9） |
+| Giscus | 文档评论系统 | `Giscus.vue`（repo: PVE-Tools/PVE-Tools-9） |
 | HarmonyOS Sans | 全局字体 | `config.mts`（head 中的 link） |
 | Iconify (MDI) | 功能卡片图标 | `HomeFeaturesWithTimeline.vue`（CSS mask-image） |
 

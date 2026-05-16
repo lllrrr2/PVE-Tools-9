@@ -13,7 +13,7 @@
 | 发现机制 | 主脚本通过 GitHub API 获取 `Modules/` 树结构，自动发现 `.sh` 文件 |
 | 元信息格式 | 脚本第 2-5 行必须包含 `## name:`、`## author:`、`## version:`、`## github:` 注释 |
 | 执行入口 | 用户在主菜单的"第三方工具集"中选择对应插件执行 |
-| 下载方式 | 从 `https://raw.githubusercontent.com/Mapleawaa/PVE-Tools-9/main/Modules/<name>.sh` 下载 |
+| 下载方式 | 从 `https://raw.githubusercontent.com/PVE-Tools/PVE-Tools-9/main/Modules/<name>.sh` 下载 |
 
 ### 插件元信息模板
 
@@ -51,7 +51,7 @@
 
 | 依赖 | 说明 |
 |---|---|
-| GitHub API | 主脚本通过 `GET /repos/Mapleawaa/PVE-Tools-9/git/trees/main?recursive=1` 发现模块 |
+| GitHub API | 主脚本通过 `GET /repos/PVE-Tools/PVE-Tools-9/git/trees/main?recursive=1` 发现模块 |
 | raw.githubusercontent.com | 模块脚本的下载源 |
 | 主脚本配置变量 | `THIRD_PARTY_MODULES_TREE_API_MAIN_URL`、`THIRD_PARTY_MODULES_RAW_BASE_URL` |
 

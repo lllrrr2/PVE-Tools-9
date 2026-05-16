@@ -36,7 +36,7 @@ const dismiss = () => {
           本项目免费开源，维护全凭热情。提交 Issue 前请先读文档和告示，无效反馈将被直接关闭。尊重是相互的。
         </p>
         <p class="message">
-          Shell 版 v8.8.8 为最终版本，<code>main</code> 分支将停止更新。后续请关注 Go 重构版（<a class="banner-link" href="https://github.com/Mapleawaa/PVE-Tools-9/tree/beta-go" target="_blank">beta-go</a>），将继续免费开源。
+          Shell 版 v8.8.8 为最终版本，<code>main</code> 分支将停止更新。后续请关注 Go 重构版（<a class="banner-link" href="https://github.com/PVE-Tools/PVE-Tools-9/tree/beta-go" target="_blank">beta-go</a>），将继续免费开源。
         </p>
       </div>
     </div>
